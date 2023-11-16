@@ -1,0 +1,753 @@
+ /*! shared Style*/
+ body {
+     background-color: #f5f5f5;
+ }
+
+ :root {
+     --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     ;
+     --color-white: #fff;
+     --color-skyblue: #0078FF;
+ }
+
+ .bg-img {
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+
+ }
+
+ .carlouse,
+ .contact {
+     background-image: url(../imges/overlay-bg.jpg);
+ }
+
+ .overlay {
+     background-color: #0077ff89;
+ }
+
+ .title .title-after {
+     position: relative;
+ }
+
+ .title .title-after::after {
+     position: absolute;
+     content: "";
+     width: 10%;
+     height: 3px;
+     left: 50%;
+     bottom: -11px;
+     background-color: var(--color-skyblue);
+     transform: translate(-50%, -50%);
+ }
+
+ /*^ Start Navbar Style*/
+ nav {
+     background-color: #181818ef;
+ }
+
+ .navbar-nav .nav-item .nav-link {
+     color: #fff;
+     font-weight: bold;
+     position: relative;
+
+ }
+
+ .navbar-nav .nav-item .nav-link::before {
+     position: absolute;
+     content: "";
+     width: 0;
+     height: 2px;
+     background-color: #fff;
+     bottom: 0;
+     left: 0;
+     transition: width 1s;
+ }
+
+ .navbar-nav .nav-item .nav-link:hover::before {
+     width: 70%;
+ }
+
+ body:has(.home:target) .link-home::before {
+     width: 70%;
+ }
+
+ body:has(.about:target) .link-about::before {
+     width: 70%;
+ }
+
+ body:has(.services:target) .link-services::before {
+     width: 70%;
+ }
+
+ body:has(.work:target) .link-work::before {
+     width: 70%;
+ }
+
+ body:has(.blog:target) .link-blog::before {
+     width: 70%;
+ }
+
+ body:has(.contact:target) .link-contact::before {
+     width: 70%;
+ }
+
+
+ /*^ End Navbar Style*/
+
+ /*^ Start Home Style*/
+ .home {
+     height: 100vh;
+     background-image: url(../imges/hero-bg.jpg);
+ }
+
+ .home .home-content p:nth-child(2) {
+     font-size: 52px;
+ }
+
+ .home .home-content p:nth-child(2)::after {
+     content: " | ";
+     animation: type 10s linear 2s  infinite;
+    
+
+
+ }
+
+ @keyframes blink {
+
+     0%,
+     100% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 0;
+     }
+
+ }
+
+ @keyframes type {
+     0% {
+         content: "D|"
+     }
+
+     1% {
+         content: "De|"
+     }
+
+     2% {
+         content: "Des|"
+     }
+
+     3% {
+         content: "Desi|"
+     }
+
+     4% {
+         content: "Desig|"
+     }
+
+     5% {
+         content: "Design|"
+     }
+
+     6% {
+         content: "Designe|"
+     }
+
+     7% {
+         content: "Designer|"
+     }
+
+
+     8% {
+         content: "|";
+         animation: blink 2s linear infinite;
+     }
+
+     9% {
+         content: "|";
+         animation: none;
+     }
+
+     10% {
+         content: "|";
+         animation: blink 2s linear infinite;
+     }
+
+     11% {
+         content: "Designe|"
+     }
+
+     12% {
+         content: "Design|"
+     }
+
+     13% {
+         content: "Desig|"
+     }
+
+     14% {
+         content: "Desi|"
+     }
+
+     15% {
+         content: "Des|"
+     }
+
+     16% {
+         content: "De|"
+     }
+
+     18% {
+         content: "Dev|"
+     }
+
+     19% {
+         content: "Deve|"
+     }
+
+     20% {
+         content: "Devel|"
+     }
+
+     21% {
+         content: "Develo|"
+     }
+
+     22% {
+         content: "Develop|"
+     }
+
+     23% {
+         content: "Develope|"
+     }
+
+     24% {
+         content: "Developer|"
+     }
+
+     26% {
+         content: "|"
+     }
+
+     28% {
+         content: "|"
+     }
+
+     29% {
+         content: "|"
+     }
+
+     31% {
+         content: "|"
+     }
+
+     32% {
+         content: "Develope|"
+     }
+
+     33% {
+         content: "Develop|"
+     }
+
+     34% {
+         content: "Develo|"
+     }
+
+     35% {
+         content: "Devel|"
+     }
+
+     36% {
+         content: "Deve|"
+     }
+
+    37% {
+         content: "Dev|"
+     }
+
+     38% {
+         content: "De|"
+     }
+
+     39% {
+         content: "D|"
+     }
+
+     41% {
+         content: "|"
+     }
+     43% {
+        content: "|"
+    }
+    44% {
+        content: "|"
+    }
+    46% {
+        content: "|"
+    }
+
+     47% {
+         content: "F|"
+     }
+
+     48% {
+         content: "Fr|"
+     }
+
+     49% {
+         content: "Fre|"
+     }
+
+     50% {
+         content: "Free|"
+     }
+
+     51% {
+         content: "Freel|"
+     }
+
+     52% {
+         content: "Freela|"
+     }
+
+     53% {
+         content: "Freelan|"
+     }
+
+     54% {
+         content: "Freelanc|"
+     }
+
+
+     55% {
+         content: "Freelance|"
+     }
+
+     56% {
+         content: "Freelancer|"
+
+     }
+
+     58% {
+         content: "|";
+
+     }
+
+    60% {
+         content: "|";
+
+     }62% {
+        content: "|";
+
+    }
+    64% {
+        content: "|";
+
+    }
+
+     65% {
+         content: "Freelance|"
+     }
+
+     66% {
+         content: "Freelanc|"
+     }
+
+     67% {
+         content: "Freelan|"
+     }
+
+     68% {
+         content: "Freela|"
+     }
+
+     69% {
+         content: "Freel|"
+     }
+
+     70% {
+         content: "Free|"
+     }
+
+     71% {
+         content: "Fre|"
+     }
+
+     72% {
+         content: "Fr|"
+     }
+
+     73% {
+         content: "F|"
+     }
+
+     74% {
+         content: " |"
+     }
+
+     75% {
+         content: " |"
+     }
+
+     76% {
+         content: "P|"
+     }
+
+     78% {
+         content: "Ph|"
+     }
+
+     79% {
+         content: "Pho|"
+     }
+
+     80% {
+         content: "Phot|"
+     }
+
+     81% {
+         content: "Photo|"
+     }
+
+     82% {
+         content: "Photog|"
+     }
+
+     83% {
+         content: "Photogr|"
+     }
+
+     83% {
+         content: "Photogra|"
+     }
+
+     84% {
+         content: "Photograp|"
+     }
+
+     85% {
+         content: "Photograph|"
+     }
+
+     86% {
+         content: "Photographe|"
+     }
+
+     87% {
+         content: "Photographer|"
+     }
+
+     88% {
+         content: "|"
+     }
+
+     89% {
+         content: "|"
+     }
+
+     90% {
+         content: "Photographe|"
+     }
+
+     91% {
+         content: "Photograph|"
+     }
+
+     92% {
+         content: "Photograp|"
+     }
+
+     93% {
+         content: "Photogra|"
+     }
+
+     94% {
+         content: "Photogr|"
+     }
+
+     95% {
+         content: "Photog|"
+     }
+
+     96% {
+         content: "Photo|"
+     }
+
+     97% {
+         content: "Phot|"
+     }
+
+     98% {
+         content: "Pho|"
+     }
+
+     99% {
+         content: "Ph|"
+     }
+
+     100% {
+         content: "|"
+     }
+
+    
+
+
+ }
+
+
+ .overlay-home {
+     background-color: rgba(0, 0, 0, 0.6);
+     height: 100%;
+ }
+
+ .home .home-content h1 {
+     font-family: var(--font);
+     font-size: 4rem;
+     text-align: center;
+
+ }
+
+ /*^ End Home Style*/
+
+ /*^ Start About Style*/
+ .about .about-me .title-right p {
+     position: relative;
+ }
+
+ .about .about-me .title-right p::after {
+     position: absolute;
+     content: "";
+     background-color: var(--color-skyblue);
+     height: 3px;
+     width: 14%;
+     left: 0;
+     bottom: -7px;
+ }
+
+ /*^ End About Style*/
+
+ /*^ Start services Style*/
+ .services .card-wrap .icon span {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+     box-shadow: 0 0 0 10px var(--color-skyblue);
+     transition: all 1s;
+     margin-top: 5px;
+ }
+
+ .services .card:hover .icon span {
+     background-color: var(--color-skyblue);
+     box-shadow: 0 0 0 10px rgba(128, 128, 128, 0.4);
+ }
+
+ .services .icon span i {
+     font-size: 40px;
+
+ }
+
+ .services .card:hover .icon i {
+     color: var(--color-white);
+ }
+
+ /*^ End services Style*/
+
+
+ /*^ Start info Style*/
+ .info {
+     margin-top: 1.875rem;
+     background-image: url(../imges/post-3.jpg);
+ }
+
+ .info .info-icon span {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+     box-shadow: 0 0 0 10px #CDE1F8;
+     transition: all 1s;
+     margin-top: 5px;
+ }
+
+
+ .info .info-icon span i {
+     font-size: 20px;
+     color: #CDE1F8;
+ }
+
+
+ .info .info-content .info-text h3 {
+     margin-top: 1.4375rem;
+     color: var(--color-white);
+     font-size: 1.5625rem;
+ }
+
+ .info .info-content .info-text p {
+     color: var(--color-white);
+
+ }
+
+ .info .info-content .info-icon {
+     display: flex;
+     justify-content: center;
+ }
+
+ /*^ End info Style*/
+
+ /*^ Start Work Style*/
+
+ .work .card .card-img-top {
+     transition: scale 1s;
+ }
+
+ .work .card .card-img-top:hover {
+     scale: 1.2;
+ }
+
+ .work .card h2 {
+     font-size: 20px;
+     padding-left: 10px;
+     margin-top: 10px;
+ }
+
+ .work .card .card-body .card-cont-left .card-text {
+     color: var(--color-skyblue);
+ }
+
+ .work .card .card-body .card-cont-right span {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 1.875rem;
+     height: 1.875rem;
+     border-radius: 50%;
+     box-shadow: 0 0 0 .125rem var(--color-skyblue);
+ }
+
+ .work .card .card-body .card-cont-right i {
+     color: var(--color-skyblue);
+     font-size: 1.25rem;
+ }
+
+ /*^ End Work Style*/
+
+ /*^ Start carlouse Style*/
+
+
+
+ .carlouse .carousel-indicators button {
+     width: 10px;
+     height: 10px;
+ }
+
+ /*^ End carlouse Style*/
+
+ /*^ Start Blog Style*/
+
+ .blog .card .card-footer .text-body-secondary img {
+     width: 1.875rem;
+     height: 1.875rem;
+ }
+
+ .blog .card .card-body h5 {
+     margin-top: .625rem;
+ }
+
+ .blog .card .card-body .img-title {
+     top: -9%;
+     left: 38%;
+
+ }
+
+ .blog .card .card-body .img-title span {
+     padding: .375rem;
+ }
+
+ /*^ End Blog Style*/
+
+ /*^ Start Contact Style*/
+
+
+
+ .contact .contact-pad {
+     padding-block: 70px;
+ }
+
+ .contact .contact-title h2 {
+     position: relative;
+ }
+
+ .contact .contact-title h2::after {
+     position: absolute;
+     content: "";
+     background-color: var(--color-skyblue);
+     left: 0;
+     bottom: -0.75rem;
+     height: 3px;
+     width: 21%;
+ }
+
+ .contact .icons-list span {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     box-shadow: 0 0 0 .125rem var(--color-skyblue);
+     position: relative;
+     transition: all 1s;
+
+ }
+
+ .contact .icons-list i {
+     position: absolute;
+     font-size: 1.25rem;
+     left: .3125rem;
+     top: .375rem;
+     color: black;
+     transition: color 1s;
+ }
+
+ .contact .icons-list span:hover {
+     box-shadow: 0 0 0 .125rem rgba(128, 128, 128, 0.622);
+     background-color: var(--color-skyblue);
+ }
+
+ .contact .icons-list span:hover i {
+     color: var(--color-white);
+ }
+
+ /*^ End Contact Style*/
+
+ /*^ Start Footer Style*/
+ footer {
+     background-color: #145babd0;
+ }
+
+ /*^ End Footer Style*/
+
+ .goUp {
+     background-color: var(--color-skyblue);
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     right: 15px;
+     bottom: 15px;
+     position: fixed;
+ }
+
+
+ .goUp i {
+     position: absolute;
+     right: 28%;
+     top: 30%;
+     color: var(--color-white);
+ }
